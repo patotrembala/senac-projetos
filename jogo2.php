@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jogo de par ou impar </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head> <meta charset="UTF-8">
-
 <body>
+    
     <h1>JOGO DE PAR OU IMPAR</h1>
     <p>selecione par ou impar e escolha um numero para cada jogador</p>
     <form action="" method="get">
@@ -22,30 +24,21 @@
         <label for="">numero do jogador 2:</label>
         <input type="number" name="nj2" id="">
         <br>
-       <input type="submit" name="" value="Jogar">
+       <input class="btn btn-dark" type="submit" name="" value="Jogar">
     
     
     
     </form>
-    <h1></h1>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
 </html>
-
 <?php
-$soma = $_GET ['nj1']+ $_GET ['nj2'];
-if ($soma % 2 == 0) {
-        if   ($_GET ['escolhaj1'] == "par")  {
-    # se entrar aqui, vai dar par
-        echo " <br> jogador 1 ganhou";
-        }   else {
-            echo "<br> O jogador 2 ganhou";
-            # se entrar aqui é impar
-        }
-}    else {
-            if ($_GET['escolhaj1'] == "impar") {
-                echo "<br> jogador 1 ganhou";
-            } else {
-                echo "<br> O jogador 2 ganhou";
-            }
-    } 
+$soma = $_GET['nj1'] + $_GET['nj2'];
+
+if ($soma % 2 > 0 and $_GET['escolhaj1'] == "par") {
+    echo "jogador 1 venceu";
+} else {
+    echo "jogador 2 venceu";
+}
+
 ?>
