@@ -25,7 +25,7 @@
         p.intro {
             text-align: center;
             font-size: 1.1em;
-            margin-bottom: 20px;
+            margin-bottom: 20px;    
         }
 
         h1 {

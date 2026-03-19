@@ -40,7 +40,8 @@
         <h1>Tabuada</h1>
         <form method="get" action="">
             <label for="numero">Número:</label>
-            <input type="number" name="numero" id="numero" required>
++
++            <input type="number" name="numero" id="numero" required>
             <input type="submit" value="Gerar">
         </form>
 
